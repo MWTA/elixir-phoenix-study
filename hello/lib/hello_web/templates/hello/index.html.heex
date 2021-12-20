@@ -1,0 +1,26 @@
+<div class="phx-hero">
+  <h2>Hello World, from Phoenix!</h2>
+
+  <%= if @username do %>
+  <p>Some condition is true for user: <%= @username %></p>
+  <% else %>
+    <p>Some condition is false for user: <%= @username %></p>
+  <% end %>
+
+  <%= raw "<b>Bold?</b>" %>
+
+
+
+  <table>
+    <tr>
+      <th>Number</th>
+      <th>Power</th>
+    </tr>
+    <%= for number <- 1..10 do %>
+      <tr>
+        <td><%= number %></td>
+        <td><%= number * number %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
